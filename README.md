@@ -7,7 +7,8 @@ This list can then just be copy-pasta-ed into a given readme to validate the wor
 
 1. [ ] Blind the docker images to anything on the network except things they need to be able to see
 1. [ ] Reduce the privileges of the `docker` user
-    * TODO: Specific list pending
+    - User should only be able to read necessary dependencies outside of application code
+    - User should only be able to write to specific locations (tmp, log, etc.)
 1. [ ] Non-public connections between microservices are all authenticated
 1. [ ] Consider a `metadata reverse proxy`
     * TODO: Explanation is warranted here
@@ -15,10 +16,10 @@ This list can then just be copy-pasta-ed into a given readme to validate the wor
 1. [ ] (not enough notes were taken) Reverse DNS
 1. [ ] Be careful to extensively lock your database down
 1. [ ] Set up periodic monitoring of time-limited resources like SSL certificates
-1. [ ] Uptime monitors
-1. [ ] Resource usage monitors
+1. [ ] Uptime, Health, Readiness and Resource usage monitors monitors
 1. [ ] Catastrophic takeover replacement plan
-1. [ ] Hard-specify your operating system version
+1. [ ] Hard-specify your base image and avoid use of latest
+1. [ ] Consider using multi-staged builds and smaller base images (alpine) to minimize attack surface
 
 ## AWS specific stuff
 1. [ ] Where possible, use AWS VPC
