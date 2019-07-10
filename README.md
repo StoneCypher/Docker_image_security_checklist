@@ -1,6 +1,9 @@
 # docker_image_security_checklist
 Let's centralize what needs to be done for any arbitrary docker image's security
 
+This list regards the docker image itself.  You probably also need to check other security checklists, such as the [Service security checklist](https://github.com/StoneCypher/Service_security_checklist/blob/master/README.md).
+
+
 This list can then just be copy-pasta-ed into a given readme to validate the work later
 
 ## Checklist
